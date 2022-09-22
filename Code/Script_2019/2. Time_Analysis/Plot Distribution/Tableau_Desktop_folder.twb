@@ -1,0 +1,558 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.20.0918.1727                               -->
+<workbook original-version='18.1' source-build='2020.3.1 (20203.20.0918.1727)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='plot' inline='true' name='federated.1fqyscu125ytzd0zj2ree0dncx1d' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='plot' name='textscan.1g18ioc0m2b4be1ciz50y18ml81k'>
+            <connection class='textscan' directory='C:/Users/Alessandro/Desktop/Business project analytics/BAP/Code/Script_2019/2. Time_Analysis' filename='plot.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1g18ioc0m2b4be1ciz50y18ml81k' name='plot.csv' table='[plot#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='it_IT' separator=';'>
+            <column datatype='integer' name='User' ordinal='0' />
+            <column datatype='integer' name='Time_Theory' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1g18ioc0m2b4be1ciz50y18ml81k' name='plot.csv' table='[plot#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='it_IT' separator=';'>
+            <column datatype='integer' name='User' ordinal='0' />
+            <column datatype='integer' name='Time_Theory' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[plot.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;it&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;it_IT&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>User</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[User]</local-name>
+            <parent-name>[plot.csv]</parent-name>
+            <remote-alias>User</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[plot.csv_B3AE726FD330479684D2C5D41930E461]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time_Theory</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Time_Theory]</local-name>
+            <parent-name>[plot.csv]</parent-name>
+            <remote-alias>Time_Theory</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[plot.csv_B3AE726FD330479684D2C5D41930E461]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Time Theory' datatype='integer' name='[Time_Theory]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[User]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='plot.csv' datatype='table' name='[__tableau_internal_object_id__].[plot.csv_B3AE726FD330479684D2C5D41930E461]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Italy&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='plot.csv' id='plot.csv_B3AE726FD330479684D2C5D41930E461'>
+            <properties context=''>
+              <relation connection='textscan.1g18ioc0m2b4be1ciz50y18ml81k' name='plot.csv' table='[plot#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='it_IT' separator=';'>
+                  <column datatype='integer' name='User' ordinal='0' />
+                  <column datatype='integer' name='Time_Theory' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='plot_Quiz' inline='true' name='federated.0vn2hxi0vx55d611ttjoo1mckwzz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='plot_Quiz' name='textscan.1xd2aep0pz372c172g8361l5pmua'>
+            <connection class='textscan' directory='C:/Users/Alessandro/Desktop/Business project analytics/BAP/Code/Script_2019/2. Time_Analysis/Plot Distribution' filename='plot_Quiz.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1xd2aep0pz372c172g8361l5pmua' name='plot_Quiz.csv' table='[plot_Quiz#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='it_IT' separator=';'>
+            <column datatype='integer' name='User' ordinal='0' />
+            <column datatype='integer' name='Time_Quiz' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1xd2aep0pz372c172g8361l5pmua' name='plot_Quiz.csv' table='[plot_Quiz#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='it_IT' separator=';'>
+            <column datatype='integer' name='User' ordinal='0' />
+            <column datatype='integer' name='Time_Quiz' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[plot_Quiz.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;it&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;it_IT&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>User</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[User]</local-name>
+            <parent-name>[plot_Quiz.csv]</parent-name>
+            <remote-alias>User</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[plot_Quiz.csv_51BBD1A097684BD5B0A2F273B3ACBEE6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time_Quiz</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Time_Quiz]</local-name>
+            <parent-name>[plot_Quiz.csv]</parent-name>
+            <remote-alias>Time_Quiz</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[plot_Quiz.csv_51BBD1A097684BD5B0A2F273B3ACBEE6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Time Quiz' datatype='integer' name='[Time_Quiz]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[User]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='plot_Quiz.csv' datatype='table' name='[__tableau_internal_object_id__].[plot_Quiz.csv_51BBD1A097684BD5B0A2F273B3ACBEE6]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Italy&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='plot_Quiz.csv' id='plot_Quiz.csv_51BBD1A097684BD5B0A2F273B3ACBEE6'>
+            <properties context=''>
+              <relation connection='textscan.1xd2aep0pz372c172g8361l5pmua' name='plot_Quiz.csv' table='[plot_Quiz#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='it_IT' separator=';'>
+                  <column datatype='integer' name='User' ordinal='0' />
+                  <column datatype='integer' name='Time_Quiz' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='plot_Forum' inline='true' name='federated.01399yd01yk2c4153qcqe1qa6vis' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='plot_Forum' name='textscan.0i3lnwr14f8pmt1eupv1j14075lj'>
+            <connection class='textscan' directory='C:/Users/Alessandro/Desktop/Business project analytics/BAP/Code/Script_2019/2. Time_Analysis/Plot Distribution' filename='plot_Forum.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0i3lnwr14f8pmt1eupv1j14075lj' name='plot_Forum.csv' table='[plot_Forum#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='it_IT' separator=';'>
+            <column datatype='integer' name='User' ordinal='0' />
+            <column datatype='integer' name='Time_Forum' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0i3lnwr14f8pmt1eupv1j14075lj' name='plot_Forum.csv' table='[plot_Forum#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='it_IT' separator=';'>
+            <column datatype='integer' name='User' ordinal='0' />
+            <column datatype='integer' name='Time_Forum' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[plot_Forum.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;it&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;it_IT&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>User</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[User]</local-name>
+            <parent-name>[plot_Forum.csv]</parent-name>
+            <remote-alias>User</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[plot_Forum.csv_43E253088F3F4BD7A7E3F73DAE80FAD5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time_Forum</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Time_Forum]</local-name>
+            <parent-name>[plot_Forum.csv]</parent-name>
+            <remote-alias>Time_Forum</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[plot_Forum.csv_43E253088F3F4BD7A7E3F73DAE80FAD5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Time Forum' datatype='integer' name='[Time_Forum]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[User]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='plot_Forum.csv' datatype='table' name='[__tableau_internal_object_id__].[plot_Forum.csv_43E253088F3F4BD7A7E3F73DAE80FAD5]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Italy&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='plot_Forum.csv' id='plot_Forum.csv_43E253088F3F4BD7A7E3F73DAE80FAD5'>
+            <properties context=''>
+              <relation connection='textscan.0i3lnwr14f8pmt1eupv1j14075lj' name='plot_Forum.csv' table='[plot_Forum#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='it_IT' separator=';'>
+                  <column datatype='integer' name='User' ordinal='0' />
+                  <column datatype='integer' name='Time_Forum' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='plot_Assignment' inline='true' name='federated.0wwclvh0h8acx915cqqw01s1msre' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='plot_Assignment' name='textscan.08ofep20hsm5ck147la3p1likf3t'>
+            <connection class='textscan' directory='C:/Users/Alessandro/Desktop/Business project analytics/BAP/Code/Script_2019/2. Time_Analysis/Plot Distribution' filename='plot_Assignment.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.08ofep20hsm5ck147la3p1likf3t' name='plot_Assignment.csv' table='[plot_Assignment#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='it_IT' separator=';'>
+            <column datatype='integer' name='User' ordinal='0' />
+            <column datatype='integer' name='Time_Assignment' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.08ofep20hsm5ck147la3p1likf3t' name='plot_Assignment.csv' table='[plot_Assignment#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='it_IT' separator=';'>
+            <column datatype='integer' name='User' ordinal='0' />
+            <column datatype='integer' name='Time_Assignment' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[plot_Assignment.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;it&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;it_IT&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>User</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[User]</local-name>
+            <parent-name>[plot_Assignment.csv]</parent-name>
+            <remote-alias>User</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[plot_Assignment.csv_D6BAB90B87C3405BAD68354561A4BCA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time_Assignment</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Time_Assignment]</local-name>
+            <parent-name>[plot_Assignment.csv]</parent-name>
+            <remote-alias>Time_Assignment</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[plot_Assignment.csv_D6BAB90B87C3405BAD68354561A4BCA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Time Assignment' datatype='integer' name='[Time_Assignment]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[User]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='plot_Assignment.csv' datatype='table' name='[__tableau_internal_object_id__].[plot_Assignment.csv_D6BAB90B87C3405BAD68354561A4BCA2]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Italy&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='plot_Assignment.csv' id='plot_Assignment.csv_D6BAB90B87C3405BAD68354561A4BCA2'>
+            <properties context=''>
+              <relation connection='textscan.08ofep20hsm5ck147la3p1likf3t' name='plot_Assignment.csv' table='[plot_Assignment#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='it_IT' separator=';'>
+                  <column datatype='integer' name='User' ordinal='0' />
+                  <column datatype='integer' name='Time_Assignment' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Foglio 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Log 2019</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='plot_Assignment' name='federated.0wwclvh0h8acx915cqqw01s1msre' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0wwclvh0h8acx915cqqw01s1msre'>
+            <column caption='Time Assignment' datatype='integer' name='[Time_Assignment]' role='measure' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[User]' role='dimension' type='ordinal' />
+            <column-instance column='[Time_Assignment]' derivation='None' name='[none:Time_Assignment:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[User]' derivation='None' name='[none:User:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0wwclvh0h8acx915cqqw01s1msre].[none:Time_Assignment:qk]' scope='rows' value='Time Spent in Assignment (min)' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0wwclvh0h8acx915cqqw01s1msre].[none:Time_Assignment:qk]</rows>
+        <cols>[federated.0wwclvh0h8acx915cqqw01s1msre].[none:User:ok]</cols>
+      </table>
+      <simple-id uuid='{DDF577D0-DF62-43B7-97E1-737E86D52725}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='115'>
+    <window class='worksheet' maximized='true' name='Foglio 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='vertical'>
+              <node-reference>
+                <axis>[federated.0wwclvh0h8acx915cqqw01s1msre].[none:Time_Assignment:qk]</axis>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.01399yd01yk2c4153qcqe1qa6vis].[none:User:ok]</field>
+            <field>[federated.0vn2hxi0vx55d611ttjoo1mckwzz].[none:Time_Quiz:ok]</field>
+            <field>[federated.0vn2hxi0vx55d611ttjoo1mckwzz].[none:User:ok]</field>
+            <field>[federated.0wwclvh0h8acx915cqqw01s1msre].[none:User:ok]</field>
+            <field>[federated.1fqyscu125ytzd0zj2ree0dncx1d].[none:Time_Theory:ok]</field>
+            <field>[federated.1fqyscu125ytzd0zj2ree0dncx1d].[none:Time_Theory:qk]</field>
+            <field>[federated.1fqyscu125ytzd0zj2ree0dncx1d].[none:User:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9900AFF7-ADC8-448D-BC4D-409A403DDB6A}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Foglio 1' width='192'>
+      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
+      p1kKHTQbeSQAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
